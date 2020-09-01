@@ -1,0 +1,332 @@
+:root{
+
+    --background: #F8FAFC;
+    --primary: #00d17a;
+    --text-title:#898F99;
+    --colorText: #D7DAE1;
+    --navbar-bg: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: var(--background);
+    min-height: 100vh;
+}
+
+.top-navbar{
+    width:100%;
+    height:3rem;
+    background: var(--navbar-bg);
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #eee;   
+    position: fixed; 
+}
+
+.content-navbartop{
+    max-width: 1024px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3.5rem 3rem 1fr 210px;
+    align-items: center;
+    height: 100%;
+}
+
+
+.content-navbartop > span{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-navbartop > span:first-of-type{
+    color: var(--primary);
+    font-size: 1.3rem;
+    border: 1px solid;
+    height: 100%;
+    border-color: transparent #eee #eee transparent;
+    
+}
+
+.content-navbartop > span:last-of-type{
+    color: var(--colorText);
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+.content-navbartop > div{
+
+    grid-column: 4;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+
+.content-navbartop > div span:first-of-type{
+    color: var(--colorText);
+    border: 1px solid;
+    width: 3.5rem;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    border-color: transparent #eee transparent #eee;
+}
+
+.content-navbartop > div span:last-of-type{
+    color: var(--colorText);
+    display: flex;
+    align-items: center;
+    color: #555;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+
+.content-navbartop > div img{
+
+    width: 18%;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+
+.dashboard-content{
+    display: grid;
+    grid-template-columns: 3.5rem 1fr;
+    grid-template-rows: 120px 1fr 1fr;
+    column-gap: 50px;
+    max-width: 1024px;
+    width: 100%;
+    min-height: 80vh;
+    height: 100%;
+}
+
+.dashboard-content .left-navbar{
+
+    position: fixed;
+    height:100vh;
+    width: 3.5rem;
+    transform: translateY(3rem);
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--navbar-bg);
+    border-right: 1px solid #eee;    
+}
+
+.dashboard-content .left-navbar ul{
+
+    list-style: none;
+    height: 310px;
+    width: 100%;
+    transform: translateY(-50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-content .left-navbar ul li{
+
+    color: var(--colorText);
+    font-size: 1.3rem;
+    transition: .5s;
+    border-right: 2px solid #fff;
+    width: 100%;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.dashboard-content .left-navbar ul li:hover{
+    
+    color: var(--colorText);
+    font-size: 1.3rem;
+    border-right: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.dashboard-center{
+    grid-column: 2;
+    grid-row: 2;
+    max-width: 830px;
+    width: 100%;
+}
+
+.dashboard-center .dashboard-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard-center .dashboard-top h1{
+    color:#444;
+}
+
+.dashboard-center .dashboard-top button{
+    color:#fff;
+    background: var(--primary);
+    padding:10px 12px;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.dashboard-center .dashboard-top button:hover{
+
+    opacity: 0.7;
+}
+.dashboard-center .dashboard-menu{
+    margin: 20px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.dashboard-center .dashboard-menu::after{
+    content: "";
+    background: var(--primary);
+    height: 1.5px;
+    width: 100px;
+    transform: translateY(1px);
+    display: block;
+}
+
+
+.dashboard-center .dashboard-menu ul{
+    
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+    width: 100%;
+    list-style: none;
+    font-size: .8rem;
+    padding: 15px 0;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.dashboard-center .dashboard-menu ul li{
+    
+    border-bottom: 2px solid transparent;
+    height: 100%;
+    cursor: pointer;
+    transition: .5s;
+    color: var(--text-title);
+}
+
+.dashboard-center .dashboard-menu ul li:hover{
+
+    color: #333;
+}
+
+.dashboard-center .dashboard-menu ul li:hover  ~{
+
+    color: #333;
+}
+
+
+.dashboard-profiles{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.dashboard-profiles .list-header{
+    list-style: none;
+    display: grid;
+    font-weight: bold;
+    color: #bbb;
+    width: 100%;
+    grid-template-columns: 70px 1.35fr 1fr 1fr .9fr 1fr .2fr;
+    font-size: .8rem;
+    margin-bottom: 20px;
+}
+
+
+
+.dashboard-profiles .list-header li{
+    text-align:center;
+}
+
+
+
+.dashboard-profiles .list-content{
+    
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.dashboard-profiles .list-content .list-content-item{
+    
+    display: grid;
+    font-size: .8rem;
+    justify-content: space-between;
+    grid-template-columns:80px 1.36fr 1fr 1fr 1fr 1fr .2fr;
+    width: 100%;
+    background: var(--navbar-bg);
+    font-size: .8rem;
+    align-items: center;
+    text-align: center;
+    padding: 15px 10px 15px 5px;
+    border-radius:5px;
+    color: #444;
+    transition: .5s ease;
+}
+
+.dashboard-profiles .list-content .list-content-item:hover{
+    
+    transform: scale(1.02);
+    box-shadow: 5px 5px 10px rgb(226, 226, 226);
+}
+
+.dashboard-profiles .list-content .list-content-item i{
+    
+    color: var(--colorText);
+}
+
+
+.dashboard-profiles .list-content .list-content-item img{
+    width: 10px;
+}
+
+.dashboard-profiles .list-content .list-content-item .aboutuser{
+    display:grid;
+    column-gap: 15px;
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 1fr;
+    font-size: .7rem;
+}
+
+.dashboard-profiles .list-content .list-content-item .aboutuser img{
+    
+    width: 30px;
+    grid-column: 1;
+    grid-row: 1/4;
+    border-radius: 50%;
+}
+
+.dashboard-profiles .list-content .list-content-item .aboutuser h3,p{
+    
+    grid-column: 2;
+    text-align: left;
+}
