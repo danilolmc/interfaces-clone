@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+:root{
+    --body-bg: #F5FAFD;
+    --white: #FFFFFF;
+    --primary:#2B76E1;
+    --recomended:#ffc107;
+    --grayText: rgb(80, 80, 80);
+    --price: #333;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    padding:60px 0;
+    min-height: 100vh;
+    background-color: var(--body-bg);
+}
+
+h1{
+    color: var(--price);
+    font-weight: 900;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    max-width: 44%;
+    line-height: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+body > span{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+body > span button{
+
+    padding:17px 50px ;
+    border: 0;
+    outline: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+body > span button:first-of-type{
+
+    color: var(--white);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: var(--primary);
+}
+
+body > span button:first-of-type:hover{
+
+        opacity: .8;
+}
+
+body > span button:last-of-type{
+
+    color: rgb(133, 133, 133);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: rgb(238, 238, 238);
+}
+body > span button:last-of-type:hover{
+
+    opacity: .7;
+}
+
+
+
+section{
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    margin-top: 70px;
+
+}
+
+section .card{
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:70px 10px 40px 5px;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 0 20px #ccc;
+}
+
+section .card h5{
+    font-size: 14px;
+}
+
+section .card span{
+    font-size: 55px;
+    font-weight: bolder;
+    color: var(--price);
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+section .card span::after{
+    content: "/mo";
+    font-size: 15px;
+    font-weight: normal;
+    color: #777;
+    position: relative;
+    top: 33px;
+}
+
+
+section .card span::before{
+    content: "$";
+    font-size: 25px;
+    font-weight: normal;
+    color: var(--price);
+    position: relative;
+    top: 27px;
+    margin-right: 2px;
+}
+
+
+section .card ul{
+    list-style: none;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+section .card ul li{
+    
+    color: #888;
+    margin-top: 8px;
+}
+
+
+section .card ul li i{
+    color: var(--primary);
+    margin-right: 5px;
+}
+
+section .card button{
+    color: #555;
+    border-radius: 5px;
+    font-weight: bolder;
+    width: 80%;
+    padding: 12px 0;    
+    margin-top: 45px;
+    font-size: 15px;
+    border:0;
+    outline:0;
+    border: 2px solid #aaa;
+    background-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+}
+
+section .card button:hover{
+    color: var(--white);
+    border-color: var(--primary);
+    background-color: var(--primary);
+
+}
+
+section .card:nth-of-type(3)
+{
+    transform: scale(1.15);
+    box-shadow: 0 0 30px #ccc;
+    border: 2px solid var(--primary);
+}
+
+section .card:nth-of-type(3):before
+{
+    content: "Recommended";
+    background: var(--recomended);
+    color: var(--white);
+    font-size: 10px;
+    padding: 2px 5px;
+    font-weight: bolder;
+    position: absolute;
+    transform: translateY(-35px);
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+section .card:nth-of-type(3) button
+{
+    color: var(--white);
+    border-color: var(--primary);
+    background-color:var(--primary);
+}
