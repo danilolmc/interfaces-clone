@@ -1,0 +1,326 @@
+:root{
+    --primary: #0DA1A1;
+    --secondary:#EEEEEC;
+    --header-form:#9C99AA;
+    --input-header:#7F7A96;
+    --checkobx-bg:#D4D3DB;
+    --form-bg:#FAFAFA;
+    --input-bg: #F3F3F3;
+    --btn-cancel:#312958;
+    --header-footer: #00694167;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    font-family: sans-serif;
+}
+
+
+body{
+    display: grid;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: 1fr 1.1fr; */
+}
+
+
+
+
+section > div:first-of-type{
+
+    background: url("./background.jpg") no-repeat;
+    background-size: cover;
+    background-position: 100% 35%;
+    color:var(--secondary);
+    filter: hue-rotate(2deg,50deg,180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+}
+
+section > div:first-of-type nav{
+
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px 20px 25px;
+}
+
+section > div:first-of-type nav span:first-of-type{
+    
+    font-weight: bold;
+}
+
+section > div:first-of-type nav span:last-of-type{
+    
+    background: var(--secondary);
+    width: 27px;
+    height: 3px;
+    border-radius:5px;
+    position: relative;
+}
+
+section > div:first-of-type nav span:last-of-type::before,
+section > div:first-of-type nav span:last-of-type::after{
+    
+        content: "";
+        background: var(--secondary);
+        width: 27px;
+        height: 3px;
+        border-radius:5px;
+        display: block;
+    }
+    
+section > div:first-of-type nav span:last-of-type::before{
+    transform: translateY(-8px);
+}
+
+
+section > div:first-of-type nav span:last-of-type::after{
+    transform: translateY(5px);
+}
+
+
+section > div:first-of-type .header{
+    transform: translateY(-80px);
+    font-style: italic;
+    text-align: center;
+}
+
+section > div:first-of-type .header p{
+
+    font-size: 1.1rem;
+    color: #ccc;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+section > div:first-of-type .header h2{
+
+    font-size: 2.5rem;
+}
+
+section > div:first-of-type .phrase_near_footer{
+
+    font-size: 1rem;
+    letter-spacing: 3px;
+    font-style: italic;
+    text-transform: uppercase;
+    transform: translateY(140px);    
+}
+
+section > div:first-of-type footer{
+
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right,transparent 60%,var(--header-footer)65%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+section > div:last-of-type{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+}
+
+
+section > div:last-of-type > span{
+    margin-top: 80px;
+}
+
+section > div:last-of-type > span h1{
+    color: var(--primary);
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+section > div:last-of-type > span p{
+
+    color: var(--header-form);
+    letter-spacing: 3.5px;
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+section > div:last-of-type > form{
+
+    width: 75%;
+    height: 60%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+section > div:last-of-type > form > div{
+
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+button{
+    cursor:pointer;
+    transition: .5s;
+}
+
+button:hover{
+    opacity: .85;
+}
+
+
+input[type="radio"]{
+    display: none;
+
+}
+
+section > div:last-of-type > form > div > .male-female{
+
+    width: 70%;
+    display: flex;
+}
+
+section > div:last-of-type > form > div > .male-female label{
+
+    color: #fff;
+    font-size: 1.5rem;
+    width: 25px;
+    height: 25px;
+    margin: 0 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--checkobx-bg);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+section > div:last-of-type > form > div > .male-female > span{
+    display: flex;
+    align-items: center;
+}
+
+
+section > div:last-of-type > form > div > .male-female > span > span{
+    color:var(--input-header);
+    margin-right:20px;
+    font-size: .9rem;
+}
+
+section > div:last-of-type > form > div > .male-female input[type="radio"]:checked ~ label{
+
+    color: #fff;
+    background: var(--primary);
+}
+
+
+section > div:last-of-type > form > div > .male-female label i{
+
+    color: #fff;
+    font-size: 1rem;
+ 
+}
+
+
+section > div:last-of-type > form > div  label{
+
+    color: #6E6B7C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: .8rem;
+
+
+}
+
+div.subscription-radios{
+
+    display: flex;
+    width: 70%;
+    justify-content: center;
+}
+
+div.subscription-radios span{
+
+    margin: 0 30px;
+
+}
+
+div.subscription-radios label{
+
+    cursor: pointer;
+
+}
+
+
+section > div:last-of-type > form > div.subscription  input[type="radio"]:checked ~ label{
+
+    /* color: #fff; */
+    color: var(--primary);
+}
+
+
+section > div:last-of-type > form > div > input[type="text"]{
+
+    width: 70%;
+    height: 80%;
+    background: var(--input-bg);
+    padding: 0 15px;
+    color: var(--header-form);
+    font-size: 1rem;
+}
+
+
+section > div:last-of-type > form > #buttons{
+
+    align-self: flex-end;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 8px;
+    margin-top: 20px;
+}
+
+
+section > div:last-of-type > form > #buttons button{
+
+    background: red;
+    align-self: flex-end;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    font-size: .9rem;
+    text-transform: uppercase;
+    height: 50px;
+}
+
+section > div:last-of-type > form > #buttons button:first-of-type{
+
+    background: var(--btn-cancel);
+}
+
+section > div:last-of-type > form > #buttons button:last-of-type{
+
+    background: var(--primary);
+}
