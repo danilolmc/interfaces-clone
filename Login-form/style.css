@@ -29,7 +29,6 @@ section{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* grid-template-columns: 1fr 1.1fr; */
 }
 
 
@@ -46,7 +45,7 @@ section > div:first-of-type{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 45%;
+    width: 47%;
 }
 
 section > div:first-of-type nav{
@@ -138,7 +137,7 @@ section > div:last-of-type{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 55%;
+    width: 53%;
 }
 
 
@@ -181,6 +180,16 @@ section > div:last-of-type > form > div{
     margin-bottom: 4px;
 }
 
+form > div.name,
+form > div.email,
+form > div.birth,
+form > div.city,
+form > div.country{
+
+    flex-direction: row-reverse;
+}
+
+
 button{
     cursor:pointer;
     transition: .5s;
@@ -195,6 +204,7 @@ input[type="radio"]{
     display: none;
 
 }
+
 
 section > div:last-of-type > form > div > .male-female{
 
@@ -274,7 +284,7 @@ div.subscription-radios label{
 }
 
 
-section > div:last-of-type > form > div.subscription  input[type="radio"]:checked ~ label{
+section > div:last-of-type > form > div.subscription  input[type="radio"]:checked + label{
 
     /* color: #fff; */
     color: var(--primary);
@@ -289,6 +299,11 @@ section > div:last-of-type > form > div > input[type="text"]{
     padding: 0 15px;
     color: var(--header-form);
     font-size: 1rem;
+}
+
+section > div:last-of-type > form > div > input[type="text"]:focus ~ label{
+
+    color:var(--primary);
 }
 
 
