@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+
+:root{
+
+    --bg:#F6F6F6;
+    --darkblue:#173C70;
+    --light-blue:#5c8dd1;
+    --very-ligh-blue:#b3eaff;
+    --very-ligh-blue-font:#7abcd6;
+    
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: 0;
+    border:0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    width:100%;
+}
+
+header{
+    width: 100%;
+    height:80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:4rem;
+}
+
+header figure{
+
+    width: 270px;
+    display: flex;
+    align-items: center;
+    cursor: context-menu;
+}
+
+header figure img{
+    width: 48%;
+}
+
+header figure figcaption{
+
+    margin-left: 1rem;
+    margin-top: .3rem;
+    font-size: 1.6rem;
+}
+
+header div.inputText{
+    background: #eee;
+    height: 50px;
+    border-radius: 30px;
+    width: 300px;
+    display: flex;
+    transform: translateX(-50px);
+    align-items: center;
+    padding: 0rem 1.5rem;
+    color: #ccc;
+}
+
+header div.inputText i{
+    
+    font-size: 1.3rem;
+}
+header div.inputText input{
+    
+    color: #aaa;
+    width: 100%;
+    background: none;
+    margin-left: 1.2rem;
+    font-size: 1.2rem;
+}
+
+header div.inputText input::placeholder{
+    
+    color: #aaa;
+}
+
+header span.header-menu{
+    display: flex;
+    align-items: center;
+    transition: opacity .5s linear;
+    cursor: pointer;
+}
+header span.header-menu p{
+    margin-right: .7rem;
+    font-size: 1.1rem;
+
+}
+
+header span.header-menu:hover{
+    opacity: .8;
+
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    height: calc(94vh - 80px);
+}
+
+
+section aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 200px;
+    position: relative;
+}
+
+
+section aside nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+section aside nav ul li{
+    transform: rotateZ(-90deg);
+    margin: 4rem 0;
+    font-size: 1.5rem;
+    color: #aaa;
+    cursor: pointer;
+    transition: .5s linear;
+
+}
+
+section aside nav ul li:hover{
+    
+    opacity: .8;
+}
+
+section aside nav ul li:last-of-type{
+    transform: rotateZ(-90deg);
+    font-size: 2.2rem;
+    color: #222;
+}
+
+
+section aside footer{
+    justify-self: flex-end;
+    position: fixed;
+    bottom:4rem;
+    font-size: 1.5rem;
+    color: #333;
+    transition: .5s linear;
+}
+
+
+section aside footer i:hover{
+    
+    opacity: .5;
+    cursor:pointer;
+    animation: effectArrow 1s linear infinite;
+}
+
+@keyframes effectArrow{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(10px);}
+    100%{transform: translateY(0px);}
+}
+
+
+section main {
+    width: 85%;
+    height: 590px;
+    display: flex;
+    align-self: flex-end;
+    border-top-left-radius: 200px;
+    background: linear-gradient(30deg, var(--darkblue) 30%,var(--light-blue));
+}
+
+section main > img {
+    max-width: 500px;
+    width: 90%;
+    transform: translate(-40px,-145px) scale(1.6,1.4); 
+    filter: drop-shadow(0 80px 60px var(--darkblue));
+    pointer-events: none;
+}
+
+
+section main .main-content{
+    padding: 4rem 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+section main .close{
+    justify-self: flex-end;
+    width: auto;
+    height:20px;
+    position: absolute;
+    right: 4rem;
+    transform: translateY(-50px);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    transition: opacity .5s linear;
+    cursor: pointer;
+}
+
+section main .close:hover{
+    opacity: .7;
+}
+
+section main .close p{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+section main .close i{
+    font-size: 1.3rem;
+}
+
+
+section main .main-content > div{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 0 2rem 0 0;
+}
+
+section main .main-content > div span{
+    width: 100%;
+    max-width: 410px;
+}
+
+section main .main-content > div h1{
+    font-size: 4rem;
+    color: var(--very-ligh-blue)
+}
+
+section main .main-content > div h3{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 100;
+}
+
+section main .main-content > div h3 span{
+    font-weight: 700;
+}
+
+section main .main-content > div p{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: var(--very-ligh-blue-font);
+    font-weight: 100;
+    text-align: left;
+    line-height: 2rem;
+}
+
+
+section main .main-content > div > img{
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
+    width: 25%;
+}
+
+section main .main-content footer{
+    width: 580px;
+    display: block;
+    margin: 1rem 0;
+}
+
+section main .main-content footer .image-clips{
+    width: 100%;
+    display: flex;
+}
+section main .main-content footer h3{
+    color:#eee;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+section main .main-content footer .image-clips  img{
+    width: 190px;
+    height: 130px;
+    margin: 0 2rem 0 0;
+    border-radius: 10px;
+    transition: .3s linear;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+section main .main-content footer .image-clips  img:hover{
+    border: 2px solid var(--light-blue);
+}
+
