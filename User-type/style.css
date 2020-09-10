@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+:root{
+    --primary:#BB66CC;
+    --bg:#EEEFF0;
+    --white:#FBFBFA;
+    --text:#1c2730;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    border:0;
+    outline: 0;
+    font-family: 'Nunito',sans-serif;
+}
+
+body{
+    background: var(--bg);
+    display: grid;
+    place-items: center;
+    min-height:100vh;
+}
+
+button,label{
+    cursor: pointer;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+section h1{
+
+    text-transform: uppercase;
+    color: var(--text);
+    font-size: 2.6rem;
+    font-weight: 800;
+    align-self: flex-start;
+}
+
+section h1::after{
+    content: "";
+    background: var(--primary);
+    width: 40px;
+    height: 8px;
+    border-radius: 50px;
+    display: block;
+}
+
+main.cards-container{
+    margin: 5rem auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"]:checked + label{
+    color: var(--white);
+    animation: .4s animaRadio ease-in-out forwards;
+}
+
+input[type="radio"]:checked + label * {
+    
+    animation: .1s animaRadioText ease-in-out forwards;
+}
+
+@keyframes animaRadio{
+
+    0%{background: var(--white); color: var(--primary);}
+    100%{
+        background: var(--primary); 
+        color: var(--white);
+        box-shadow: 20px 50px 80px -35px var(--primary);
+        transform: scale(1.02);
+    }
+}
+
+@keyframes animaRadioText{
+    
+    to{color: var(--white);}
+}
+
+main label{
+    height: 230px;
+    background: var(--white);
+    width: 235px;
+    border-radius: 45px;
+    margin: 0 2rem 0 0;
+    display: grid;
+    place-items: center;
+    transition: .5s;
+}
+
+main label div.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main label div.content i{
+    font-size: 2.7rem;
+    color: var(--primary);
+}
+
+main label div.content span{
+    font-size: 1.4rem;
+    color: var(--text);
+    font-weight: 800;
+    margin-top: 1rem;
+}
+
+
+section > span button:first-of-type{
+    font-size: 1.2rem;
+    padding: 15px 60px;
+    border-radius: 40px;
+    color: #aaa;
+    font-weight: 800;
+    transition: .5s;
+    background: var(--white);
+}
+
+section > span button:first-of-type:hover{
+    color: var(--white);
+    background: var(--primary);
+}
+
+section > span button:last-of-type{
+    font-size: 1.2rem;
+    height: 55px;
+    width: 55px;
+    margin-left: 1rem;
+    border-radius: 50%;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: .5s;
+    background: var(--primary);
+}
+
+section > span button:last-of-type:hover{
+    color: var(--white);
+    background: var(--primary);
+    box-shadow: 5px 10px 30px -5px var(--primary);
+    
+}
+
+
+
