@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+:root{
+    --bg-main:#F2F5F8;
+    --primary: #151C52;
+    --bg1-btn:#435CE8;
+    --bg2-btn:#374DCB;
+    --white: #FFFFFF;
+    --font-main-color:#0A0C25;
+    --dorpdown-bg: #e0e0e0;
+    --text-side: #eee;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    font-family: "Roboto",sans-serif;
+    list-style: none;
+}
+
+img{
+    width: 10%;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+}
+
+aside{
+    height: 100%;
+    background: var(--primary);
+    color: var(--text-side);
+    padding: 10px 20px;
+}
+
+aside header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+aside header span{
+    border-radius: 50%;
+    color: #eee;
+    display: block;
+    width: 40px;
+    font-size: 2rem;
+    height: 40px;
+}
+
+
+aside main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 87%;
+    margin: 20px 0;
+    font-weight: 300;
+
+    font-size: .85rem;
+}
+
+main ul{
+
+    margin: 0;
+
+}
+
+
+main ul li{
+
+    padding: .6rem 1.2rem;
+    border-radius: 2px;
+    margin: 0 .5rem .3rem 0;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+main ul li:hover{
+
+    background: rgba(255, 255, 255, .1);
+}
+
+main ul:first-of-type li:first-of-type{
+
+    background: var(--bg1-btn);
+    
+}
+
+main ul li i{
+    font-size: 1.1rem;
+}
+
+main ul li span{
+    margin-left: 1rem;
+    letter-spacing: 1px;
+}
+
+body > main{
+    background: var(--bg-main);
+}
+
+main header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+main header > div{
+    width: 100%;
+    max-width: 190px;
+    background: #eee;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    color: #777;
+    font-weight: 600;
+    position: relative;
+}
+
+
+
+main header > div > div.dropdown{
+    background: #eee;
+    box-shadow: 0 10px 20px -10px #aaa;
+    position: absolute;
+    transform: translate(0,6.8rem);
+    padding: 1rem 1.5rem;
+    border: 1px solid #ddd;
+    width: 100%;
+    display: none;
+    opacity: 0;
+    transition: 1s linear;
+}
+
+main header > div > div.dropdown:hover{
+    display: block;
+}
+
+main header > div:hover > div.dropdown{
+    display: block;
+    animation: animaDorpdown 1s forwards;
+    animation-delay: .1s;
+}
+
+@keyframes animaDorpdown{
+    to{opacity: 1;}
+}
+
+main header > div > div.dropdown span{
+
+    display: block;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: 1s;
+}
+
+main header > div > div.dropdown span:hover{
+    color: var(--bg2-btn);
+}
+
+main header div img{
+
+    width: 2rem;
+    border-radius: 50%;
+    margin: 1rem;
+    border: 1px solid #bbb;
+}
+
+
+main header div span i{
+
+    font-size: .8rem;
+    margin: 0 .5rem;
+}
+
+main section{
+    margin: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+main section h1{
+    font-size: 2.3rem;
+    color: var(--font-main-color);
+}
+
+main section > div.second-header{
+    margin: 2rem 0;
+}
+
+main section > div.second-header p{
+
+    font-weight: bolder;
+    font-size: 1rem;
+    color: var(--font-main-color);
+}
+
+main section > div.second-header div{
+    
+    border: 1px solid #ddd;
+    background: var(--white);
+    max-width: 370px;
+    height: 50px;
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 1rem; 
+    color: #ddd;
+}
+
+
+main section > div.second-header div input{
+    
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    color: #888;
+    font-size: 1rem;
+}
+
+
+main section > div.second-header div input::placeholder{
+    
+    color: #ccc;
+}
+
+
+
+section h3{
+    font-size: 1rem;
+    margin: 0 0 1.5rem 0;
+}
+
+div.categories{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 1.5rem;
+}
+
+
+div.categories  label{
+    height: 280px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+div.categories  label input:checked + span{
+    background: linear-gradient(var(--bg1-btn),var(--bg2-btn));
+    transform: scale(1.04);
+    box-shadow: 0 20px 35px -10px #aaa;
+}
+
+
+
+div.categories  label input:checked + span p{
+    
+    color: var(--white);
+}
+
+div.categories  label span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 5px;
+    background: var(--white);
+    border: 1px solid #ddd;
+    transition: .3s cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+div.categories  label span i{
+
+    color: #0f0;
+    opacity: 0;
+    display: grid;
+    font-size: 1.1rem;
+    place-items: center;
+    border-radius: 100px;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: var(--white);
+}
+
+div.categories  label input:checked + span i{
+    
+    animation: iconSelection .5s ease-in-out forwards;
+}
+ 
+
+@keyframes iconSelection{
+    to{opacity: 1;}
+}
+ 
+
+div.categories  label span img{
+    width: 50%;
+    margin: 0rem 0 2rem;
+}
+
+div.categories  label span p{
+    color: var(--font-main-color);
+    font-weight: 600;
+}
+
+section > button{
+    
+    padding: .8rem 2rem;
+    border-radius: 3px;
+    align-self: flex-end;
+    margin: 2rem 0rem;
+    background: linear-gradient(var(--bg1-btn),var(--bg2-btn));
+    color: var(--white);
+    cursor: pointer;
+}
