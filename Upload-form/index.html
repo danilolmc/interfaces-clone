@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Upload</title>
+</head>
+
+<body>
+
+    <section>
+
+        <header>
+            <h1>Upload files</h1>
+            <span class="close"></span>
+        </header>
+
+        <main>
+
+            <div class="upload-area">
+                <span>
+                    <img src="./upload.svg" alt="Upload icon">
+
+                    <span class="text-upload">
+                        <p>Drop files to upload or <label for="file">browse</label></p>
+                    </span>
+                    <input type="file" id="file">
+
+                </span>
+            </div>
+
+            <div class="form-container">
+
+                <header>
+                    <ul>
+                        <li><label>Options</label></li>
+                        <li><label>Description</label></li>
+                        <li><label>Advanced</label></li>
+                    </ul>
+                </header>
+
+                <form>
+
+                    <div class="emailNotify">
+                        <label>Notify by email</label>
+                        <span>
+                            <input type="text">
+                            <label class="plusIcon">+</label>
+                        </span>
+                    </div>
+                    
+                    <div class="input-group">
+                        
+                        
+                        <div class="category">
+                            <label>Category</label>
+                            <span>
+                                
+                                <input type="text">
+                                <label class="fas fa-chevron-down"></label>
+                                <ul>
+                                    <li><span>Image</span></li>
+                                    <li><span>Document</span></li>
+                                    <li><span>Link</span></li>
+                                </ul>
+                            </span>
+                        </div>
+                        
+                        <div class="privacy">
+                            <label>Privacy</label>
+                            <span>
+                                <input type="text">
+                                <label class="fas fa-chevron-down"></label>
+                                <ul>
+                                    <li><span>Secure</span></li>
+                                    <li><span>Not Secure</span></li>
+                                    <li><span>Default</span></li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+
+                    <span class="notfy">
+                        <p>
+                            <b>Nobody</b>
+                            will be notified of this file upload
+                        </p>
+                        <label for="notify">
+                            <input type="checkbox" id="notify">
+                            Send me a copy
+                        </label>
+                    </span>
+
+                    <div class="buttons">
+                        <button class="upload">Upload</button>
+                        <button class="cancel">Cancel</button>
+                    </div>
+
+                    <label class="prbl">Having problems? Try the <a href="#">basic uploader</a></label>
+
+                </form>
+
+            </div>
+        </main>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+:root{
+
+    --primary:#0BB5D9;
+    --title:#242424;
+    --text:#C7C7C7;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    font-family: sans-serif;
+}
+
+button,a{
+    cursor: pointer;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background: var(--primary);
+}
+
+section{
+    width: 90%;
+    max-height: 740px;
+    height: 100%;
+    background: var(--white);
+    box-shadow:  5px 20px 40px -20px #777;
+}
+
+section > header{
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid;
+    border-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem 0 3rem;
+}
+
+section > header h1{
+    color: var(--title);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+section > header span.close,
+section > header span.close::after{
+
+    background: #ccc;
+    width: 2px;
+    height: 35px;
+    display: block;
+}
+
+section > header span.close{
+
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+section > header span.close::after{
+    content: "";
+    transform: rotate(90deg);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 4rem 6rem 4rem 4rem;
+    height: 85%;
+    column-gap: 2.5rem;
+}
+
+
+main div.upload-area{
+    background: #FCFCFC;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    border: 3.5px dashed #ddd;
+    transition: .5s;
+}
+
+main div.upload-area:hover{
+    background: #eee;
+    
+}
+
+main div.upload-area span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+}
+
+main div.upload-area span input{
+    display: none;
+}
+
+main div.upload-area span img{
+    max-width: 12%;
+    
+}
+
+main div.upload-area span span.text-upload{
+    color: #555;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    width: 43%;
+    text-align: center;
+    line-height: 2rem;
+}
+
+main div.upload-area span label{
+    color: var(--primary);
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: underline var(--primary);
+    cursor: pointer;
+}
+
+
+main div.form-container header{
+    width: 100%;
+    height: 2.2rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+main div.form-container header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    border-bottom: 3px solid #eee;
+}
+
+
+main div.form-container header ul li{
+    text-align: center;
+    list-style: none;
+    margin: 0 2rem 0 0;
+    font-size: 1.1rem;
+    height: 100%;
+    width: 20%;
+    display: grid;
+    height: 100%;
+    align-items: flex-start;
+    position: relative;
+    color: var(--text);
+}
+
+main div.form-container header ul li:first-of-type{
+
+    font-weight: 600;
+    color: var(--title);    
+}
+
+main div.form-container header ul li:first-of-type::after{
+    content: "";
+    background: var(--primary);
+    width: 100px;
+    height: 4px;
+    position: absolute;
+    bottom: -3px;
+}
+
+form{
+    margin-top: 3rem;
+}
+
+
+form  div > label{
+    color:Red;
+    font-weight: 600;
+    color: var(--title);
+    font-size: 1.1rem;
+    display: block;
+}
+
+form div.input-group{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    column-gap: 2rem;
+}
+
+form div.input-group{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    column-gap: 2rem;
+}
+
+form  div > span{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    border: 3px solid #eee;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: .5rem auto 1.2rem auto;
+    color: #bbb;
+    position: relative;
+}
+
+.input-group div span input:focus ~ ul{
+
+    display: block;
+    opacity: 1;
+}
+
+.input-group div span ul{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    background: #fff;
+    top:50px;
+    width: 100%;
+    height: auto;
+    list-style:none;
+    border-radius: 8px;
+    box-shadow: 0 15px 30px -10px #aaa;
+}
+
+.input-group span ul li{
+    width: 100%;
+    height: 50px;
+    border: .5px solid #eee;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    transition: .5s;
+    cursor: context-menu;
+}
+
+.input-group span ul li:hover{
+    background: #eee;
+}
+
+form  div > span input{
+    color: #aaa;
+    font-size: 1rem;
+    max-width: 90%;
+    padding: 0 1rem;
+}
+
+div.emailNotify input{
+    width: 100%;
+}
+
+form  div > span label{
+    transform: translate(-1rem,.1rem);
+}
+
+span.notfy{
+    display: block;
+    color: #777;
+    margin: 1rem auto;
+}
+
+span.notfy b{
+    color: #444;
+}
+
+span.notfy label{
+
+    color: #555;
+    font-size: 1rem;
+    display: block;
+    margin: 1rem auto auto auto;
+    display: flex;
+    align-items: center;
+}
+
+span.notfy label input[type="checkbox"]{
+
+    width: 1rem;
+    height: 1rem;
+    margin-right: .5rem;
+}
+
+div.buttons{
+    display: flex;
+    width: 85%;
+    height: 60px;
+    margin:2.2rem 0 ;
+}
+
+div.buttons button{
+    width: 50%;
+    margin: 0 1rem 0 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: none;
+    transition: opacity 1s;
+}
+
+div.buttons button:first-of-type{
+    background: var(--primary);
+    color: var(--white);
+}
+
+div.buttons button:first-of-type:hover{
+    opacity: .7;
+}
+
+div.buttons button:last-of-type{
+    text-align: left;
+    color: #777;
+    margin-left: 1rem;
+}
+
+label.prbl{
+    color: #aaa;
+    font-size: 1.1rem;
+}
+
+label.prbl a{
+    color: var(--primary);
+}
