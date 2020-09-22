@@ -1,0 +1,282 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root{
+    --primary:#FA494B;
+    --white:#F7F6F6;
+    --dark-gray:#525252;
+    --light-gray:#BBBBBB;
+}
+
+*{
+ margin: 0;
+ padding: 0;
+ cursor: context-menu;
+ box-sizing: border-box;
+ outline: 0;
+ border: 0;
+ font-family:'Poppins',sans-serif;
+}
+
+body{
+    background: white;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 52% 48%;
+}
+
+
+section.shoe{
+    background: var(--primary);
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+
+section.shoe header img{
+    width: 3rem;
+}
+
+
+section.shoe > img{
+    width: 680px;
+    transform: translateX(-70px);
+}
+
+section.shoe footer.shoe_footer{
+   
+    transform: translateY(-30px);
+}
+
+
+section.shoe footer.shoe_footer h1{
+    
+    font-weight: 200;
+    line-height: 2rem;
+}
+
+section.shoe footer.shoe_footer h1:nth-child(n+3){
+    
+    font-weight: 500;
+        
+}
+
+section.shoe footer.shoe_footer div{
+            
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.shoe footer.shoe_footer div button{
+            
+    background: none;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 300;
+    color: var(--white);
+    /* transform: translateY(-5px); */
+}
+
+label span{
+    font-size: .6rem;
+    transform: translateX(-2px);
+    display: inline-flex;
+}
+
+
+section.others-shoe{
+
+    padding: 3rem 0 3rem 1rem;
+}
+
+section.others-shoe header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* padding-top: 2rem; */
+}
+
+section.others-shoe header div:first-of-type{
+
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.others-shoe header div:first-of-type h1{
+
+        font-weight: 300;
+    transform: translateY(-8px);
+}
+
+section.others-shoe header div:first-of-type h1 span{
+
+        font-weight: 500;
+}
+
+section.others-shoe header div:first-of-type button{
+
+    width: 35%;
+    height: 100%;
+    background: none;
+}
+
+section.others-shoe header div:first-of-type button img{
+
+    width: 35%;
+    height: 100%;
+}
+
+section.others-shoe header div:last-of-type{
+
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+    align-items: center;
+}
+
+section.others-shoe header div:last-of-type span{
+
+    margin: 0 1rem;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+section.others-shoe header div:last-of-type i{
+
+        color: #888;
+}
+
+main{
+    margin-top: 3rem;
+    padding: 0 0 0 1rem ;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    overflow: hidden;
+}
+
+main > ul{
+    list-style: none;
+}
+
+main > ul{
+    display: flex;
+    writing-mode: vertical-rl;
+    list-style: none;
+}
+
+main > ul li{
+    font-size: .7rem;
+    margin: 2rem 0;
+    transform: rotate(-180deg);
+}
+
+main > ul li:last-child{
+    color: #888;
+}
+
+section.card_container{
+    display: flex;
+    overflow: hidden;
+    margin: 0 2rem;
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+}
+
+section .cards{
+    
+    overflow: hidden;
+}
+
+section.card_container div.card{
+    width: 100%;
+    box-shadow:  10px 10px 30px  #ccc;
+    margin: 1rem 2rem 0 0;
+    width: auto;
+    min-width: 220px;
+    height: 86%;  
+    overflow: hidden;
+}
+
+div.content_card{
+    margin: 1.5rem 0rem;
+    display: flex;
+    padding: 0 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.content_card h2{
+    font-size: 1rem;
+    color: var(--dark-gray);
+}
+
+div.content_card label{
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+div.content_card label span{
+    margin-left: .3rem;
+
+}
+
+div.content_card > span{
+    margin: 2rem 0 0 0;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.content_card span a{
+    color: var(--light-gray);
+    font-size: .8rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.content_card span button{
+    color: var(--light-gray);
+    background: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+div.content_card h2:nth-child(1){
+
+    font-weight: 300;
+}
+
+
+section.card_container div.card img{
+    width: 17rem;
+    transform: translateX(-50px);
+}
+
+section .cards footer.cards_container_footer ul{
+    
+    display: flex;
+    list-style: none;
+    margin-left: 1.5rem;
+}
+
+
+section .cards footer.cards_container_footer li{
+    
+    margin: 0 1rem;
+    font-size: .8rem;
+}
