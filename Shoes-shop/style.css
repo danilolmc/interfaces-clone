@@ -186,7 +186,7 @@ main > ul li:last-child{
 section.card_container{
     display: flex;
     overflow: hidden;
-    margin: 0 2rem;
+    margin: 0 2rem 2rem 2rem;
     height: 460px;
     width: 100%;
     overflow: scroll;
@@ -194,7 +194,9 @@ section.card_container{
 
 section.card_container::-webkit-scrollbar{
     background: none;
+    height: 8px;
 }
+
 
 
 
