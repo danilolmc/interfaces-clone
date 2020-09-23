@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
+
+
+:root{
+    --bg-color-one:#131D21;
+    --bg-color-two:#364044;
+    --card-one-bg:#B03B66;
+    --card-one-btn:#B13B6B;
+    --card-two:#EC3951;
+    --card-trhee:#14353F;
+    --white: #fff;
+    --black: #000;
+    --light-gray:#D3D3D3;
+}
+
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Oswald';
+}
+
+button{
+    cursor: pointer;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: #eee;
+}
+
+body > div.banner{
+
+    height: 50vh;   
+    width: 100%;
+    background: radial-gradient(circle,var(--bg-color-two) 10%,var(--bg-color-one) 80%) ;    
+    background-size: 160% 100%;
+    background-repeat: no-repeat;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-296px);
+}
+
+section div.card-container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+section div.card{
+    max-width: 29%;
+    margin: 0 1rem;
+    height: 88vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+section div.card > span{
+    
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+section div.card:nth-of-type(1) > span::before,
+section div.card:nth-of-type(2) > span::before,
+section div.card:nth-of-type(3) > span::before{
+    
+    content: "";
+    left: 0;
+    height: 15px;
+    width: 3px;
+    margin: 0 1rem 0 0;
+}
+
+section div.card:nth-of-type(1) > span::before{
+    
+    background: var(--card-one-bg);
+}
+
+section div.card:nth-of-type(2) > span::before{
+    
+    background: var(--card-two);
+}
+
+section div.card:nth-of-type(3) > span::before{
+    
+    background: var(--black);
+}
+
+section div.card div.card-main{
+    margin-top: 5rem;
+    height: 72%;
+    box-shadow: 0 20px 20px -17px #ccc;
+    background: var(--white);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: 1s;
+}
+
+
+section div.card div.card-main header img{
+    width: 40px;
+    margin: 1rem;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+
+section div.card div.card-main:hover header img{
+    width: 70px;
+    margin: .2rem .5rem;
+}
+
+section div.card:nth-of-type(3) div.card-main header img{
+    width: 25px;
+    margin: 1.3rem;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+}
+
+section div.card:nth-of-type(3) div.card-main:hover header img{
+    width: 40px;
+}
+
+section div.card div.card-main > span{
+
+    display: block;
+    width: 100%;
+    height: 42%;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transform: translateY(-1px);
+}
+
+section div.card:nth-of-type(1) div.card-main > span{
+
+    background: var(--card-one-bg);
+    border-top: 1px solid var(--card-one-bg);
+}
+
+section div.card:nth-of-type(2) div.card-main > span{
+
+    background: var(--card-two);
+}
+
+section div.card:nth-of-type(3) div.card-main > span{
+
+    background: var(--card-trhee);
+}
+
+
+
+section div.card div.card-main span img{
+
+    position: absolute;
+   width: 290px;
+   transform: rotateY(180deg) rotateZ(40deg) translate(-15px,-60px);
+    filter: drop-shadow(0 20px 20px rgba(0,0,0,0.5));
+    transition: .7s  cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+
+section div.card div.card-main:hover > span img{
+
+    transform: rotateY(180deg) rotateZ(0deg) scale(1.06) translate(0px,-20px);
+}
+
+
+section div.card:nth-of-type(1) div.card-main span img,
+section div.card:nth-of-type(3) div.card-main span img
+{
+    
+    width: 325px;
+    transform: rotateY(180deg) rotateZ(42deg) translate(-15px,-90px);
+}
+
+
+section div.card:nth-of-type(1) div.card-main:hover span img{
+
+    transform: rotateY(180deg) rotateZ(0deg) scale(1.06) translate(15px,-45px);
+}
+
+section div.card:nth-of-type(3) div.card-main:hover span img{
+
+    transform: rotateY(180deg) rotateZ(0deg) scale(1) translate(15px,-35px);
+}
+
+
+div.card-main > div.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5rem 1rem 0 1rem;
+    text-align: center;
+}
+
+div.card-main > div.content > span{
+    text-transform: uppercase;
+    color: #bbb;
+    font-size: 1rem;
+}
+
+div.card-main > div.content > h1{
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+div.card-main > div.content > p{
+    
+    font-weight: 300;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    font-size: .9rem;
+    color: #888;
+}
+
+div.card-main > button{
+ 
+    color: var(--white);
+    width: 70%;
+    height: 40px;
+    margin-top: 2rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    transition: opacity 1s;
+}
+div.card-main > button:hover{
+    
+    opacity: .9;
+}
+
+div.card:nth-of-type(1) div.card-main > button{
+ 
+    background-color: var(--card-one-btn);
+}
+
+div.card:nth-of-type(2) div.card-main > button{
+ 
+    background-color: var(--card-two);
+}
+div.card:nth-of-type(3) div.card-main > button{
+ 
+    background-color: var(--card-trhee);
+}
+
+section footer{
+    width: 11%;
+    height: 10px;
+    transform: translateY(-30px);
+    display: flex;
+    justify-content: space-between;
+}
+
+section footer span{
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    display: block;
+    background: #ccc;
+}
+
+section footer span:nth-of-type(2){
+    background: var(--black);
+}
