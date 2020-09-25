@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --white:#FFFFFF;
+    --dark-gray:#35353C;
+    --light-gray:#ACA8A9;
+    --medium-gray:#E6DBD5;
+    --main-bg:#FCF6F3;
+    --primary:#CA2728;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    cursor: context-menu;
+    font-family: 'Noto Sans JP';
+}
+
+button,li,label{
+    cursor: pointer;
+}
+
+body{
+    background: var(--main-bg);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+
+body > header{
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 80px;
+    min-height: 80px;
+    padding: 0 3rem;
+}
+
+body > header > img{
+
+    max-width: 60px;
+    transform: translateY(-5px);
+}
+
+body > header ul li{
+    transition: .5s;
+}
+
+body > header li img{
+    
+    max-width: 30px;
+    border-radius: 50%;
+}
+
+body > header div.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body > header div.left span{
+    font-size: 1.7rem;
+    color: var(--dark-gray);
+}
+
+body > header div.right{
+    height: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+body > header div.right ul li:nth-of-type(2){
+    background: var(--dark-gray);
+    height: 100%;
+    color: var(--white);
+    display: grid;
+    place-items: center;
+    padding: 1rem 1.5rem;
+}
+
+body > header div.right ul li:nth-of-type(2):hover{
+    opacity: .8;
+}
+
+body > header div ul li:hover{
+    color: #aaa;
+}
+
+header li span{
+    cursor: pointer;
+}
+
+body > header div ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    transform: translateX(50px);
+    justify-content: space-between;
+    align-items: center;
+}
+
+body > header div ul li{
+    margin: 0 2.5rem 0 .5rem;
+    font-size: .9rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: var(--dark-gray);
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0rem 0 5rem;
+    height: calc(100vh - 80px);
+}
+
+
+section > aside:first-of-type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    height: auto;
+    transform: translateY(-30px);
+}
+
+section > aside:first-of-type header{
+
+    width: 90%;
+    display: flex;
+    transform: translateY(20px);
+    justify-content: flex-end;
+}
+
+section > aside:first-of-type header span{
+
+    color: var(--dark-gray);
+    font-size: 1.2rem;
+    position: relative;
+    background: var(--main-bg);
+}
+
+section > aside:first-of-type header span::after{
+
+    content: "";
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    transform: translate(15px,-40px);
+}
+
+section > aside:first-of-type > div{
+
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    background: var(--primary);
+    display: grid;
+    place-items: center ;
+}
+
+section > aside:first-of-type > div img{
+
+    width: 650px;
+    transform: translate(-80px,-100px);
+    filter: drop-shadow(0 40px 20px  rgba(0,0,0,0.5));
+    transition: .7s cubic-bezier(0.34, 1.56, 0.64, 1);
+    cursor: pointer;
+    filter: brightness(125%);
+}
+
+section > aside:first-of-type > div img:hover{
+
+    transform: rotateZ(40deg)  translate(-120px,-70px);
+}
+
+section > aside:first-of-type > footer{
+
+    width: 60%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section > aside:first-of-type > footer > img{
+
+    width: 20%;
+    height: 100%;
+}
+
+section > aside:first-of-type > footer > img:nth-of-type(1){
+  
+    transform: translate(-10px,-25px);
+    position: relative;
+}
+
+section > aside:first-of-type > footer::after{
+  
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    margin: 1.5rem 1.5rem 0 1.5rem;
+    border-radius: 50%;
+    background: var(--primary);
+}
+
+section > aside:first-of-type > footer > img:nth-of-type(n+2){
+
+    filter: grayscale(1);
+    opacity: .6;
+}
+
+section aside:last-of-type{
+    width: 46%;
+    height: 100%;
+    display: flex;
+    padding-top: 7rem;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+section aside:last-of-type main{
+    padding-right: 7rem;
+}
+
+
+section aside:last-of-type h1{
+    font-size: 2.5rem;
+    max-width: 70%;
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+
+section aside:last-of-type h1:nth-of-type(2){
+
+    color: var(--primary);
+    font-weight: 300;
+    margin: 2rem 0;
+}
+
+section aside:last-of-type  div.sizes{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+section aside:last-of-type  div.sizes ul{
+    list-style: none;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+section aside:last-of-type  div.sizes ul li{
+    
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+
+section aside:last-of-type  div.sizes ul li:nth-child(2n){
+    
+    color: var(--light-gray);
+}
+
+input[type="radio"]:checked + span{
+    color: var(--primary);
+}
+
+section aside:last-of-type  div.sizes ul li span{
+    cursor: pointer;
+}
+
+section aside:last-of-type  div.sizes button{
+    
+    color: var(--white);
+    background: var(--primary);
+    height: 100%;
+    width: 18%;
+    transition: opacity .5s ;
+}
+
+
+section aside:last-of-type  div.sizes button:hover{
+    opacity: .8;
+}
+
+section aside:last-of-type  div.text-under-sizes{
+    width: 100%;
+    margin: 2rem 0;
+}
+
+div.text-under-sizes h4,
+div.text-under-sizes h5{
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    margin-bottom: .5rem;
+}
+
+aside:last-of-type > footer{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    color: var(--dark-gray);
+    background: var(--medium-gray);
+}
+
+aside:last-of-type > footer span:last-of-type{
+    color: #bbb;
+    font-size: 2rem;
+}
