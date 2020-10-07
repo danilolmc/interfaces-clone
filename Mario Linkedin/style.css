@@ -227,7 +227,7 @@ main section.header-main {
   background-size: 110% 190%;
   background-repeat: no-repeat;
   height: 50vh;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 main section.header-main:hover {
@@ -395,7 +395,7 @@ section.main-content div.profile-data > span.profile::before {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: 7px solid var(--white);
+  border: 6px solid var(--white);
   background: #10e482;
   transform: translate(50px, 49px);
   z-index: 1;
@@ -426,7 +426,6 @@ section.main-content div.profile-data > span.profile > h5 {
 
 section.main-content div.profile-data > span.profile > div.conexoes_e_views {
   width: 100%;
-  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -442,6 +441,14 @@ span.profile > div.conexoes_e_views span {
   justify-content: center;
 }
 
+span.profile > div.conexoes_e_views span:last-of-type::after {
+  content: "";
+  background: #ddd;
+  width: 1px;
+  height: 70px;
+  position: absolute;
+}
+
 span.profile > div.conexoes_e_views span h1 {
   color: var(--main-blue);
   font-size: 1.5rem;
@@ -449,7 +456,7 @@ span.profile > div.conexoes_e_views span h1 {
 
 span.profile > div.conexoes_e_views span p {
   color: var(--medium-gray);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 0.5rem;
   font-family: "ubuntu";
 }
@@ -475,8 +482,8 @@ span.profile > footer button:first-of-type {
   color: var(--white);
 }
 
-span.profile > footer button:hover {
-  transform: scale(1.05);
+span.profile > footer button:first-of-type:hover {
+  filter: opacity(0.6);
 }
 
 span.profile > footer button:last-of-type {
@@ -484,6 +491,11 @@ span.profile > footer button:last-of-type {
   color: #aaa;
   font-weight: 500;
   border: 3px solid var(--gray);
+}
+
+span.profile > footer button:last-of-type:hover {
+  background: #ccc;
+  color: #fff;
 }
 
 section.main-content div.profile-data span.experiencia {
