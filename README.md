@@ -1,7 +1,5 @@
 <h1 align="center"> Interfaces Cone</h1>
 
-
-
 <p align="center">
  <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=5468CE&labelColor=535353" alt="PRs welcome!" />
 
@@ -17,15 +15,11 @@
 
 </p>
 
-
 &nbsp;
-
 
 ### Serie de projetos de clones de interfaces
 
-
 &nbsp;
-
 
 ## Tecnologias
 
@@ -42,65 +36,61 @@
 
 &nbsp;
 
-## Mario Interface
-<!-- &nbsp; -->
+## Mario Linkedin
+
+Linkedin do Mario desenvolvido a partir do layout criado pelo [Daniel Snows](https://dribbble.com/shots/5768210-Linkedin-Super-Mario-Concept)
 
 ![alt](mario.png)
-
-
-&nbsp;
 
 ## Rodando o projeto
 
 Certifique-se de que você tenha o Git e o Node.JS instalado na sua máquina, se não tiver baixe esse repositório em "Download ZIP" e depois acesse os links na seção LINKS, para baixar o Git e o Node.JS e depois siga os passos a seguir.
 
-
 1º- Clone o projeto como git:
 
-~~~shell
+```shell
 git clone https://github.com/DaniloLima122/interfaces-clone
-~~~
+```
 
-Obs: Alguns projetos foram criados com bibliotecas externas, para estes, navegue até a pasta do projeto e siga os passos a seguir. 
+Obs: Alguns projetos foram criados com bibliotecas externas, para estes, navegue até a pasta do projeto e siga os passos a seguir.
 
 2º - Instale as dependencias do projeto:
 
-~~~shell
+```shell
 npm install
-~~~
+```
 
 ou, se você usa o Yarn como gerenciador de pacotes é só digitar:
 
-~~~shell
+```shell
 yarn install
-~~~
+```
 
 4º - Abra a pasta que você clonou/baixou, no seu editor de preferência
 
-5º - Agora, para rodar os projetos feitos só com HTML e CSS, é só abrir o arquivo HTML no seu navegador, e para rodar os projetos feitos com libs externas digite o seguinte no seu terminal:
+5º - Agora, para rodar os projetos feitos só com HTML e CSS, é só abrir o arquivo HTML no seu navegador, e para rodar os projetos feitos com ReactJS digite o seguinte no seu terminal:
 
-~~~shell
+```shell
 npm start
-~~~
+```
 
 ou, se você usa o Yarn digite:
 
-~~~shell
+```shell
 yarn start
-~~~
-
+```
 
 ## Contribuições
 
-Fique a vontade para avaliar o repositório dando uma "star" ou contribuir com o projeto e reportar sobre bugs e dar sugestões de melhorias e novos projetos para adicionar neste repositório.
+Fique a vontade para avaliar o repositório dando uma "star" ou contribuir com o projeto, quem sabe criando seus layouts e adicionando neste repositorio para ajudar outras pessoas que estão aprendendo principalmente CSS.
 
+Você também pode reportar sobre bugs e dar sugestões de melhorias ou idéias de novos projetos, fique a vontade!!
 
 ## Links
 
 - Instalação do [Git](https://git-scm.com/)
-- Instalação do [Node.js](https://nodejs.org/en/download/) 
+- Instalação do [Node.js](https://nodejs.org/en/download/)
 
 ## Licença
+
 - [MIT](LICENSE)
-
-
