@@ -12,8 +12,6 @@
 
   <img alt="forks" src="https://img.shields.io/github/forks/DaniloLima122/interfaces-clone?color=5468CE">
 
-  <img alt="size" src="https://img.shields.io/github/repo-size/DaniloLima122/interfaces-clone?color=5468CE">
-
 </p>
 
 &nbsp;
