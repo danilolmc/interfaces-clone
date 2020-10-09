@@ -20,7 +20,7 @@
 
 ### Serie de projetos de clones de interfaces
 
-#### Este repositório possui uma série de diretorios com projetos construídos principalmente em HTML e CSS para eu praticar e de alguma forma ajudar outras pessoas que estão aprendendo HTML e CSS.
+Este repositório possui uma série de diretorios com projetos construídos principalmente em HTML e CSS para eu praticar e de alguma forma ajudar outras pessoas que estão aprendendo HTML e CSS.
 
 &nbsp;
 
