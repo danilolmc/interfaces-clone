@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+:root {
+  --primary: #444cf7;
+  --gradient-one: #454ef9;
+  --gradient-two: #3038e5;
+  --light-gray: #a0a0a0;
+  --very-light-gray: #d2d2d2;
+  --medium-gray: #484848;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+body > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem 0 1.5rem;
+}
+
+header > img {
+  width: 5%;
+}
+
+body > header label {
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  cursor: pointer;
+  align-items: flex-end;
+  transform: scale(0.7);
+}
+
+body > header label span {
+  background: #3038e5;
+  border-radius: 10px;
+  height: 7px;
+  margin: 7px 0;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+body > header label span:nth-of-type(1) {
+  width: 100%;
+}
+
+body > header label span:nth-of-type(2) {
+  width: 50%;
+}
+
+body > header label span:nth-of-type(3) {
+  width: 75%;
+}
+
+body > header label input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+  transform-origin: bottom;
+  transform: rotatez(45deg) translate(12px, 13px);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+  transform-origin: top;
+  transform: rotatez(-45deg) translate(5px, -12px);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+  /* background: red; */
+  transform-origin: bottom;
+  width: 50%;
+  transform: translate(-25px, -10px) rotatez(-45deg);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 76px);
+}
+
+main header {
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+  transform: rotate(-90deg);
+}
+
+main header ul li {
+  margin: 0 1.5rem;
+  font-family: "Roboto";
+  color: var(--medium-gray);
+  font-weight: normal;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+main header ul li:first-of-type {
+  color: var(--gradient-one);
+  font-weight: 500;
+}
+
+main section {
+  display: flex;
+  align-items: center;
+}
+
+main section article {
+  max-width: 45%;
+  margin-left: 2rem;
+}
+
+main section article h1 {
+  color: var(--primary);
+  font-family: "Ubuntu";
+  font-size: 8rem;
+  font-weight: normal;
+  margin-bottom: 0.2rem;
+}
+
+main section article h3 {
+  color: var(--light-gray);
+  font-family: "Ubuntu";
+  font-weight: normal;
+  margin-bottom: 3rem;
+  font-size: 2.6rem;
+}
+
+main section article p {
+  color: var(--medium-gray);
+  font-family: "Ubuntu";
+  font-weight: normal;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  max-width: 82%;
+}
+
+main section article button {
+  color: #fff;
+  font-family: "Ubuntu";
+  font-weight: normal;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  padding: 1rem;
+  background: linear-gradient(
+    180deg,
+    var(--gradient-one) 0%,
+    var(--gradient-one) 0.01%,
+    var(--gradient-two) 100%
+  );
+  width: 130px;
+
+  border-radius: 70px 30px 100px 70px;
+  box-shadow: 0px 4px 10px #454ef9;
+  transition: 0.5s box-shadow, 0.5s transform;
+  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+  cursor: pointer;
+}
+
+main section article button:hover {
+  box-shadow: 0px 10px 15px #454ef9;
+  transform: scale(1.02);
+}
+
+figure {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("./img/ringbg.png") no-repeat;
+  background-size: 96% 80%;
+  background-position: center -10px;
+  transform: translateX(-50px);
+}
+
+figure > img {
+  max-width: 45%;
+  height: 540px;
+  animation: carrouselEffect 0.7s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+figure figcaption {
+  display: flex;
+  flex-direction: column;
+  transform: translate(-80px, -10px);
+  margin: 1.2rem 0;
+}
+
+@keyframes carrouselEffect {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+figure figcaption span {
+  color: var(--gradient-one);
+  font-family: "Ubuntu";
+  margin-bottom: 1rem;
+}
+
+figure figcaption div img {
+  width: 25px;
+}
+
+figure footer {
+  height: 20px;
+  display: flex;
+}
+
+figure footer label {
+  background: var(--very-light-gray);
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+}
+
+.active {
+  background: var(--primary);
+}
