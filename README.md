@@ -39,7 +39,19 @@ Este repositório possui uma série de diretorios com projetos construídos prin
 
 Linkedin do Mario desenvolvido a partir do layout criado pelo [Daniel Snows](https://dribbble.com/shots/5768210-Linkedin-Super-Mario-Concept)
 
-![alt](mario.png)
+<!-- ![alt](mario.png) -->
+<img src="mario.png" style="max-width:950px">
+
+<br>
+<br>
+<br>
+
+## Card Shoes
+
+Card de apresentação de produtos criado inspirado em um layout da web
+
+<!-- ![alt](shoesCard.jpg) -->
+<img src="shoesCard.jpg" style="max-width:950px">
 
 ## Rodando o projeto
 
