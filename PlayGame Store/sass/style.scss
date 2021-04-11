@@ -5,10 +5,10 @@ $salmon: #f47f7f;
 $input-black: #0d0f17;
 $card-status-bg: #ffb983;
 
-@mixin appearenceAnimation($initial_delay) {
+@mixin stepperAnimation($initial_delay, $items_quantity: 6) {
   animation: appearence_animation 0.5s ease forwards;
 
-  @for $var from 1 to 6 {
+  @for $var from 1 to $items_quantity {
     &:nth-child(#{$var}) {
       animation-delay: $initial_delay + $var * 0.05s;
     }
@@ -123,6 +123,10 @@ body {
           display: flex;
           align-items: center;
           transition: 0.5s ease;
+          transform: translateX(100px);
+          opacity: 0;
+
+          @include stepperAnimation(1s, 7);
 
           .icon-left-menu {
             img {
@@ -185,7 +189,7 @@ body {
       align-items: center;
       column-gap: 3em;
       position: fixed;
-
+      background-color: $dark-gray;
       .left-side-header {
         display: flex;
         column-gap: 1rem;
@@ -313,7 +317,7 @@ body {
               filter: opacity(0.8);
             }
 
-            @include appearenceAnimation(0.8s);
+            @include stepperAnimation(0.8s);
 
             header {
               padding: 1.3rem 1.2rem;
@@ -388,7 +392,7 @@ body {
 
       .carrousel-points {
         padding-top: 2.5rem;
-        width: 98%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -403,7 +407,7 @@ body {
         }
 
         span {
-          width: 3.65rem;
+          width: 3.75rem;
           height: 0.16rem;
           display: block;
           margin: 0 0.8rem;
@@ -422,7 +426,7 @@ body {
           width: 18.6em;
           height: 13rem;
 
-          @include appearenceAnimation(0.8s);
+          @include stepperAnimation(0.8s);
 
           & > footer {
             height: 5rem;

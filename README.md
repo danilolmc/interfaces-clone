@@ -31,7 +31,8 @@ Este repositório possui uma série de diretorios com projetos construídos prin
 ## Tecnologias
 
 - [HTML5]()
-- [CSS3]()
+- [CSS3]() 
+- [SASS]()
 - [ReactJS](https://pt-br.reactjs.org/)
 - [Styled Components](https://styled-components.com/)
 
