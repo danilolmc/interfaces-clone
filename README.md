@@ -44,7 +44,7 @@ Este repositório possui uma série de diretorios com projetos construídos prin
 - [Card Shoes](#card-shoes)
 - [Disney UI](#disney-ui)
 - [Form UI](#form-ui)
-- [PlayGames Store](#playgame-store)
+- [PlayGames Store](#play-game-store)
 
 &nbsp;
 &nbsp;
