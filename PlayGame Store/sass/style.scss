@@ -5,6 +5,23 @@ $salmon: #f47f7f;
 $input-black: #0d0f17;
 $card-status-bg: #ffb983;
 
+@mixin appearenceAnimation($initial_delay) {
+  animation: appearence_animation 0.5s ease forwards;
+
+  @for $var from 1 to 6 {
+    &:nth-child(#{$var}) {
+      animation-delay: $initial_delay + $var * 0.05s;
+    }
+  }
+
+  @keyframes appearence_animation {
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -253,6 +270,17 @@ body {
         color: $white;
         margin: 3rem 0 2.5rem 0;
         font-size: 1.5rem;
+        animation: animateH2 0.5s ease forwards;
+        animation-delay: 0.5s;
+        transform: translateX(50px);
+        opacity: 0;
+      }
+
+      @keyframes animateH2 {
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
       }
 
       .carrousel_container {
@@ -276,6 +304,10 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            transform: translateX(100px);
+            opacity: 0;
+
+            @include appearenceAnimation(0.8s);
 
             header {
               padding: 1.3rem 1.2rem;
@@ -354,6 +386,15 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        animation: carrousel_point_animation ease 0.5s forwards;
+        opacity: 0;
+        animation-delay: 1s;
+
+        @keyframes carrousel_point_animation {
+          to {
+            opacity: 1;
+          }
+        }
 
         span {
           width: 3.65rem;
@@ -374,6 +415,8 @@ body {
         .carroulsel-item {
           width: 18.6em;
           height: 13rem;
+
+          @include appearenceAnimation(0.8s);
 
           & > footer {
             height: 5rem;
