@@ -44,6 +44,7 @@ Este repositório possui uma série de diretorios com projetos construídos prin
 - [Card Shoes](#card-shoes)
 - [Disney UI](#disney-ui)
 - [Form UI](#form-ui)
+- [PlayGames Store](#playgame-store)
 
 &nbsp;
 &nbsp;
@@ -95,6 +96,16 @@ Formulario inspirado em um layout da web
 
 <!-- ![alt](shoesCard.jpg) -->
 <img src="form.jpg" style="max-width:950px">
+
+## Play Game Store
+
+Store inspirada em um layout da web
+
+&nbsp;
+&nbsp;
+
+<!-- ![alt](shoesCard.jpg) -->
+<img src="playgames_store.png" style="max-width:950px">
 
 
 &nbsp;
