@@ -135,6 +135,57 @@ body > aside > div ul li {
           align-items: center;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  opacity: 0;
+  -webkit-animation: appearence_animation 0.5s ease forwards;
+          animation: appearence_animation 0.5s ease forwards;
+}
+
+body > aside > div ul li:nth-child(1) {
+  -webkit-animation-delay: 1.05s;
+          animation-delay: 1.05s;
+}
+
+body > aside > div ul li:nth-child(2) {
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+
+body > aside > div ul li:nth-child(3) {
+  -webkit-animation-delay: 1.15s;
+          animation-delay: 1.15s;
+}
+
+body > aside > div ul li:nth-child(4) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+body > aside > div ul li:nth-child(5) {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+body > aside > div ul li:nth-child(6) {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+
+@-webkit-keyframes appearence_animation {
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appearence_animation {
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 body > aside > div ul li .icon-left-menu img {
@@ -204,6 +255,7 @@ body main > header {
   -webkit-column-gap: 3em;
           column-gap: 3em;
   position: fixed;
+  background-color: #151820;
 }
 
 body main > header .left-side-header {
@@ -317,6 +369,29 @@ body main section h2 {
   color: #fff;
   margin: 3rem 0 2.5rem 0;
   font-size: 1.5rem;
+  -webkit-animation: animateH2 0.5s ease forwards;
+          animation: animateH2 0.5s ease forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  opacity: 0;
+}
+
+@-webkit-keyframes animateH2 {
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes animateH2 {
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 body main section .carrousel_container {
@@ -355,6 +430,52 @@ body main section .carrousel_container > div .carroulsel-item {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-animation: appearence_animation 0.5s ease forwards;
+          animation: appearence_animation 0.5s ease forwards;
+}
+
+body main section .carrousel_container > div .carroulsel-item:hover {
+  -webkit-filter: opacity(0.8);
+          filter: opacity(0.8);
+}
+
+body main section .carrousel_container > div .carroulsel-item:nth-child(1) {
+  -webkit-animation-delay: 0.85s;
+          animation-delay: 0.85s;
+}
+
+body main section .carrousel_container > div .carroulsel-item:nth-child(2) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+body main section .carrousel_container > div .carroulsel-item:nth-child(3) {
+  -webkit-animation-delay: 0.95s;
+          animation-delay: 0.95s;
+}
+
+body main section .carrousel_container > div .carroulsel-item:nth-child(4) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+body main section .carrousel_container > div .carroulsel-item:nth-child(5) {
+  -webkit-animation-delay: 1.05s;
+          animation-delay: 1.05s;
+}
+
+@keyframes appearence_animation {
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 body main section .carrousel_container > div .carroulsel-item header {
@@ -432,7 +553,7 @@ body main section .carrousel_container > div .--pagan-online {
 
 body main section .carrousel-points {
   padding-top: 2.5rem;
-  width: 98%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,10 +563,27 @@ body main section .carrousel-points {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-animation: carrousel_point_animation ease 0.5s forwards;
+          animation: carrousel_point_animation ease 0.5s forwards;
+  opacity: 0;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes carrousel_point_animation {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes carrousel_point_animation {
+  to {
+    opacity: 1;
+  }
 }
 
 body main section .carrousel-points span {
-  width: 3.65rem;
+  width: 3.75rem;
   height: 0.16rem;
   display: block;
   margin: 0 0.8rem;
@@ -459,6 +597,41 @@ body main section .carrousel-points .--active {
 body main .whats_hot .carrousel_container .carroulsel-item {
   width: 18.6em;
   height: 13rem;
+  -webkit-animation: appearence_animation 0.5s ease forwards;
+          animation: appearence_animation 0.5s ease forwards;
+}
+
+body main .whats_hot .carrousel_container .carroulsel-item:nth-child(1) {
+  -webkit-animation-delay: 0.85s;
+          animation-delay: 0.85s;
+}
+
+body main .whats_hot .carrousel_container .carroulsel-item:nth-child(2) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+body main .whats_hot .carrousel_container .carroulsel-item:nth-child(3) {
+  -webkit-animation-delay: 0.95s;
+          animation-delay: 0.95s;
+}
+
+body main .whats_hot .carrousel_container .carroulsel-item:nth-child(4) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+body main .whats_hot .carrousel_container .carroulsel-item:nth-child(5) {
+  -webkit-animation-delay: 1.05s;
+          animation-delay: 1.05s;
+}
+
+@keyframes appearence_animation {
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 body main .whats_hot .carrousel_container .carroulsel-item > footer {
