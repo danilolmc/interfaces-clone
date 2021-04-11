@@ -306,6 +306,12 @@ body {
             justify-content: space-between;
             transform: translateX(100px);
             opacity: 0;
+            cursor: pointer;
+            transition: 0.5s ease;
+
+            &:hover {
+              filter: opacity(0.8);
+            }
 
             @include appearenceAnimation(0.8s);
 

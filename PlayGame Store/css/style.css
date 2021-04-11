@@ -381,8 +381,16 @@ body main section .carrousel_container > div .carroulsel-item {
   -webkit-transform: translateX(100px);
           transform: translateX(100px);
   opacity: 0;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   -webkit-animation: appearence_animation 0.5s ease forwards;
           animation: appearence_animation 0.5s ease forwards;
+}
+
+body main section .carrousel_container > div .carroulsel-item:hover {
+  -webkit-filter: opacity(0.8);
+          filter: opacity(0.8);
 }
 
 body main section .carrousel_container > div .carroulsel-item:nth-child(1) {
