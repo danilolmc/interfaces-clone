@@ -67,25 +67,21 @@ Linkedin do Mario desenvolvido a partir do layout criado pelo [Daniel Snows](htt
 Card de apresentação de produtos criado inspirado em um layout da web
 
 &nbsp;
-&nbsp;
-
-<!-- ![alt](shoesCard.jpg) -->
 <img src="shoesCard.jpg" style="max-width:950px">
 
 
 &nbsp;
 &nbsp;
 
-
 ## Disney UI
 
 UI da Disney inspirado em um layout da internet
 
 &nbsp;
-&nbsp;
 
 <img src="disney.jpg" style="max-width:950px">
 
+&nbsp;
 &nbsp;
 
 ## Form UI
@@ -93,9 +89,6 @@ UI da Disney inspirado em um layout da internet
 Formulario inspirado em um layout da web
 
 &nbsp;
-&nbsp;
-
-<!-- ![alt](shoesCard.jpg) -->
 <img src="form.jpg" style="max-width:950px">
 
 ## Play Game Store
@@ -103,9 +96,7 @@ Formulario inspirado em um layout da web
 Store inspirada em um layout da web
 
 &nbsp;
-&nbsp;
 
-<!-- ![alt](shoesCard.jpg) -->
 <img src="playgames_store.png" style="max-width:950px">
 
 
@@ -116,7 +107,6 @@ Store inspirada em um layout da web
 
 Radions button customizado inspirado em um layout da web
 
-&nbsp;
 &nbsp;
 
 <img src="usertype.jpg" style="max-width:950px">
