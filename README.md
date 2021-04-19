@@ -46,6 +46,7 @@ Este repositório possui uma série de diretorios com projetos construídos prin
 - [Disney UI](#disney-ui)
 - [Form UI](#form-ui)
 - [PlayGames Store](#play-game-store)
+- [User Type](#user-type)
 
 &nbsp;
 &nbsp;
@@ -54,7 +55,6 @@ Este repositório possui uma série de diretorios com projetos construídos prin
 
 Linkedin do Mario desenvolvido a partir do layout criado pelo [Daniel Snows](https://dribbble.com/shots/5768210-Linkedin-Super-Mario-Concept)
 
-&nbsp;
 &nbsp;
 
 <img src="mario.png" style="max-width:950px">
