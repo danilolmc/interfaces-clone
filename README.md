@@ -89,6 +89,9 @@ Formulario inspirado em um layout da web
 &nbsp;
 <img src="form.jpg" style="max-width:950px">
 
+&nbsp;
+&nbsp;
+
 ## Play Game Store
 
 Store inspirada em um layout da web
