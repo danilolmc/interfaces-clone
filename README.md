@@ -56,7 +56,6 @@ Este repositório possui uma série de diretorios com projetos construídos prin
 Linkedin do Mario desenvolvido a partir do layout criado pelo [Daniel Snows](https://dribbble.com/shots/5768210-Linkedin-Super-Mario-Concept)
 
 &nbsp;
-
 <img src="mario.png" style="max-width:950px">
 
 &nbsp;
@@ -78,7 +77,6 @@ Card de apresentação de produtos criado inspirado em um layout da web
 UI da Disney inspirado em um layout da internet
 
 &nbsp;
-
 <img src="disney.jpg" style="max-width:950px">
 
 &nbsp;
@@ -96,7 +94,6 @@ Formulario inspirado em um layout da web
 Store inspirada em um layout da web
 
 &nbsp;
-
 <img src="playgames_store.png" style="max-width:950px">
 
 
@@ -108,7 +105,6 @@ Store inspirada em um layout da web
 Radions button customizado inspirado em um layout da web
 
 &nbsp;
-
 <img src="usertype.jpg" style="max-width:950px">
 
 &nbsp;
