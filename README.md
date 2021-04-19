@@ -1,4 +1,4 @@
-<h1 align="center"> Interfaces Cone</h1>
+<h1 align="center"> Interfaces Clone</h1>
 <h3 align="center"> README em construção</h3>
 
 <p align="center">
