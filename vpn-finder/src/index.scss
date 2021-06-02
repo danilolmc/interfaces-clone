@@ -1,0 +1,33 @@
+
+:root{
+  --primary: #415CF5;
+  --white: #fff;
+  --light-blue: #8695F4;
+  --dark-blue: #2A4B62;
+  --light-gray: #BEC5C9;
+  --very-light-gray: #ECF0F3;
+
+}
+
+*{
+  border: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto';
+}
+
+body{
+  min-height: 100vh;
+  background: var(--very-light-gray);
+
+  &::after{
+    content: "";
+    width: 100%;
+    height: 55%;
+    background: var(--primary);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+  }
+}

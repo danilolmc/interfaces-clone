@@ -1,0 +1,58 @@
+$card-background: var(--white);
+$card-title: var(--dark-blue);
+$card-text: var(--light-gray);
+$input-gray: var(--very-light-gray);
+
+.card {
+  border-radius: 5px;
+  background: $card-background;
+  padding: 3rem 2rem 0;
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 1.4rem;
+
+    span {
+      width: 4rem;
+      height: 4rem;
+      display: grid;
+      place-content: center;
+      background: $input-gray;
+      border-radius: 50%;
+      padding: 0.5rem;
+
+      img {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        filter: saturate(1.5) brightness(.74) contrast(1.8);
+      }
+    }
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    h2 {
+      color: $card-title;
+      font-size: 1.2rem;
+    }
+
+    p {
+      color: $card-text;
+      font-size: 0.8rem;
+    }
+
+    .input {
+      height: 2.5rem;
+    }
+
+    button {
+      padding: 1rem 2.4rem;
+    }
+  }
+}
