@@ -1,4 +1,4 @@
-<h1 align="center"> Interfaces Cone</h1>
+<h1 align="center"> Interfaces Clone</h1>
 <h3 align="center"> README em construção</h3>
 
 <p align="center">
@@ -31,7 +31,8 @@ Este repositório possui uma série de diretorios com projetos construídos prin
 ## Tecnologias
 
 - [HTML5]()
-- [CSS3]()
+- [CSS3]() 
+- [SASS]()
 - [ReactJS](https://pt-br.reactjs.org/)
 - [Styled Components](https://styled-components.com/)
 
@@ -44,6 +45,8 @@ Este repositório possui uma série de diretorios com projetos construídos prin
 - [Card Shoes](#card-shoes)
 - [Disney UI](#disney-ui)
 - [Form UI](#form-ui)
+- [PlayGames Store](#play-game-store)
+- [User Type](#user-type)
 
 &nbsp;
 &nbsp;
@@ -53,8 +56,6 @@ Este repositório possui uma série de diretorios com projetos construídos prin
 Linkedin do Mario desenvolvido a partir do layout criado pelo [Daniel Snows](https://dribbble.com/shots/5768210-Linkedin-Super-Mario-Concept)
 
 &nbsp;
-&nbsp;
-
 <img src="mario.png" style="max-width:950px">
 
 &nbsp;
@@ -65,25 +66,20 @@ Linkedin do Mario desenvolvido a partir do layout criado pelo [Daniel Snows](htt
 Card de apresentação de produtos criado inspirado em um layout da web
 
 &nbsp;
-&nbsp;
-
-<!-- ![alt](shoesCard.jpg) -->
 <img src="shoesCard.jpg" style="max-width:950px">
 
 
 &nbsp;
 &nbsp;
 
-
 ## Disney UI
 
 UI da Disney inspirado em um layout da internet
 
 &nbsp;
-&nbsp;
-
 <img src="disney.jpg" style="max-width:950px">
 
+&nbsp;
 &nbsp;
 
 ## Form UI
@@ -91,10 +87,17 @@ UI da Disney inspirado em um layout da internet
 Formulario inspirado em um layout da web
 
 &nbsp;
+<img src="form.jpg" style="max-width:950px">
+
+&nbsp;
 &nbsp;
 
-<!-- ![alt](shoesCard.jpg) -->
-<img src="form.jpg" style="max-width:950px">
+## Play Game Store
+
+Store inspirada em um layout da web
+
+&nbsp;
+<img src="playgames_store.png" style="max-width:950px">
 
 
 &nbsp;
@@ -105,8 +108,6 @@ Formulario inspirado em um layout da web
 Radions button customizado inspirado em um layout da web
 
 &nbsp;
-&nbsp;
-
 <img src="usertype.jpg" style="max-width:950px">
 
 &nbsp;
