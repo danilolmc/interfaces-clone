@@ -47,7 +47,7 @@ Este repositório possui uma série de diretorios com projetos construídos prin
 - [User Type](#user-type)
 - [VPN Finder](#vpn-finder)
 
-#### Os outros projetos estão sendo adicionado ao README aos poucos mas pode ficar a vontade pra clonar o repositorio e ver eles ao vivo na sua máquina
+Os outros projetos estão sendo adicionado ao README aos poucos mas pode ficar a vontade pra clonar o repositorio e ver eles ao vivo na sua máquina
 
 &nbsp;
 &nbsp;
