@@ -36,7 +36,6 @@ Este repositório possui uma série de diretorios com projetos construídos prin
 - [ReactJS](https://pt-br.reactjs.org/)
 - [Styled Components](https://styled-components.com/)
 
-&nbsp;
 
 ## Projetos nesse repositório
 
