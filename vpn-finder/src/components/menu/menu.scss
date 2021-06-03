@@ -23,7 +23,7 @@ ul {
         cursor: inherit;
         padding-left: 3rem;
         border-left: 4px solid transparent;
-        transition: 0.5s ease;
+        transition: background-color 0.5s ease, border-color 0.5s ease;
 
         span {
             display: flex;
@@ -77,4 +77,14 @@ ul {
 
   border-color: $primary !important;
   background: $very-light-blue;
+  color: $primary;
+
+  svg{ 
+    opacity: 1;
+  }
+
+  svg + span{
+    filter: brightness(100%) !important;
+  }
+
 }
