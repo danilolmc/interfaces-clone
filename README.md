@@ -41,7 +41,6 @@ Este repositório possui uma série de diretorios com projetos construídos prin
 ## Projetos nesse repositório
 
 
-- [Menu](#menu)
 - [Tecnologias](#tecnologias)
 - [Projetos nesse repositório](#projetos-nesse-repositório)
 - [Mario Linkedin](#mario-linkedin)
@@ -51,10 +50,7 @@ Este repositório possui uma série de diretorios com projetos construídos prin
 - [Play Game Store](#play-game-store)
 - [User Type](#user-type)
 - [VPN Finder](#vpn-finder)
-- [Rodando os projetos](#rodando-os-projetos)
-- [Contribuições](#contribuições)
-- [Links](#links)
-- [Licença](#licença)
+
 
 &nbsp;
 &nbsp;
