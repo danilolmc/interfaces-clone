@@ -25,7 +25,7 @@ function App() {
   }
 
   const item = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 25 },
     show: { 
       opacity: 1 , 
       y: 0,
