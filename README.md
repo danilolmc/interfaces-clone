@@ -123,7 +123,7 @@ Certifique-se de que você tenha o Git instalado na sua máquina, se não tiver 
 git clone https://github.com/DaniloLima122/interfaces-clone
 ```
 
-Obs: Alguns projetos foram criados com bibliotecas externas, para estes você precisará ter o Node.Js instalado, se não tiver vá até a seção [Links](#Links) navegar até a pasta do projeto e seguir os passos a seguir.
+Obs: Alguns projetos foram criados com bibliotecas externas, para estes você precisará ter o Node.Js instalado, se não tiver vá até a seção [Links](#Links) e depois siga os passos abaixo.
 
 2º - Instale as dependencias do projeto:
 
