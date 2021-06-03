@@ -1,98 +1,119 @@
 $color-ip: var(--white);
 $color-label: var(--light-blue);
+$primary: var(--primary);
 
 .App {
   display: grid;
-  grid-template-columns: 25% 75%;
-}
+  grid-template-columns: 23% 77%;
 
-main {
-  padding: 2rem 6rem;
-  height: 100vh;
+  nav{
+    background: $color-ip;
+    box-shadow: 0 10px 30px rgba($color: #000000, $alpha: .1);
 
-  .middle-content {
-    margin-top: .5rem;
-    height: calc(100vh - 53vh);
+    header{
+      border-bottom: 1px solid #eee;
+      height: 5rem;
+      line-height: 5rem;
+      padding-left: 3rem;
 
-    header {
-      display: flex;
-      column-gap: 6rem;
-      align-items: flex-end;
+      span{
+        color: $primary;
+      }
+    }
 
-      .ips {
-        width: 58%;
+  }
 
-        label,
-        h1,
-        .input-container {
-          margin-top: 1.4rem;
-        }
+  main {
+    padding: 2rem 7rem;
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
 
-        label {
-          color: $color-label;
-          text-transform: uppercase;
-          font-size: 0.8rem;
-          font-weight: 700;
-          display: block;
-          transform: translate(.5rem,.7rem);
-        }
-        
-        h1 {
+    .middle-content {
+      margin-top: 0.5rem;
+      min-height: 47vh;
+      height: 47vh;
+
+      header {
+        display: flex;
+        column-gap: 6rem;
+        align-items: flex-end;
+
+        .ips {
+          width: 58%;
+
+          label,
+          h1,
+          .input-container {
+            margin-top: 1.4rem;
+          }
+
+          label {
+            color: $color-label;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 700;
+            display: block;
+            transform: translate(0.5rem, 0.7rem);
+          }
+
+          h1 {
             font-size: 3rem;
             color: $color-ip;
-        }
-        
-        .input-container {
+          }
+
+          .input-container {
             display: flex;
             column-gap: 0.6rem;
             height: 2.8rem;
             max-width: 500px;
-            
+
             button {
-                padding: 0 2rem;
+              padding: 0 2rem;
             }
+          }
         }
-    }
-    
-    .data-ip {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-self: stretch;
-        gap: 1.8rem 1rem;
-        
-        & span {
+
+        .data-ip {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-self: stretch;
+          gap: 1.8rem 1rem;
+
+          & span {
             display: block;
-            
-            label{
-                font-size: .7rem;
-                margin-bottom: .7rem;
-                display: block;
-                text-transform: uppercase;
-                color: $color-label;
-                font-weight: 700;
+
+            label {
+              font-size: 0.7rem;
+              margin-bottom: 0.7rem;
+              display: block;
+              text-transform: uppercase;
+              color: $color-label;
+              font-weight: 700;
             }
 
-            h2{
-                color: $color-ip;
-                font-weight: 700;
+            h2 {
+              color: $color-ip;
+              font-weight: 700;
             }
 
-          &:last-child {
-            grid-column: 1 / 3;
+            &:last-child {
+              grid-column: 1 / 3;
+            }
           }
         }
       }
-    }
 
-
-    .cards-container{
+      .cards-container {
         margin-top: 3rem;
 
         height: 100%;
 
         display: grid;
         gap: 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
     }
   }
 }

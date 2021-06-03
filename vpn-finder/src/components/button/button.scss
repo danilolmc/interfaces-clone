@@ -7,6 +7,12 @@ button{
     display: grid;
     color: $button-color;
     place-content: center;
+    transition: .5s ease;
+
+    &:hover{
+        filter: brightness(110%);
+    }
+
     
     &[typeButton="iconButton"]{
         font-size: 1.2rem;

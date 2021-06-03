@@ -6,8 +6,37 @@ import { Button } from "./components/button";
 import { Card } from "./components/card";
 import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
+import { Menu } from "./components/menu";
+
+import { motion } from 'framer-motion';
 
 function App() {
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: .15,
+        delayChildren: .3,
+    
+      }
+    }
+  }
+
+  const item = {
+    hidden: { opacity: 0, y: 30 },
+    show: { 
+      opacity: 1 , 
+      y: 0,
+      transition: {
+        
+        ease: "easeInOut",
+        duration: .5
+      }
+    }
+  }
+
 
   const [cardData, setCardData] = useState([
     {
@@ -19,7 +48,12 @@ function App() {
 
   return (
     <div className="App">
-      <nav></nav>
+      <nav>
+        <header>
+          <h1><span>vpn</span>Finder</h1>
+        </header>
+        <Menu />
+      </nav>
       <main>
         <Header></Header>
         <section className="middle-content">
@@ -47,27 +81,40 @@ function App() {
               </span>
             </div>
           </header>
-          <div className="cards-container">
-            <Card cardData={cardData[0]}>
-              <div className="input-card">
-                <Input placeholder="Search" inputContext="card">
-                  <BiSearch />
-                </Input>
-              </div>
-            </Card>
-            <Card cardData={cardData[0]}>
-              <div className="input-card">
-                <Input placeholder="Test" inputContext="card">
-                  <BiSearch />
-                </Input>
-              </div>
-            </Card>
-            <Card cardData={cardData[0]}>
-              <div className="input-card">
+          <motion.div
+            variants={container}
+            initial="hidden"
+            animate="show"
+            className="cards-container">
+
+            <motion.div variants={item}>
+              <Card as={motion.div} cardData={cardData[0]}>
+                <div className="input-card">
+                  <Input placeholder="Search" inputContext="card">
+                    <BiSearch />
+                  </Input>
+                </div>
+              </Card>
+            </motion.div>
+
+            <motion.div variants={item}>
+              <Card as={motion.div} variants={item} cardData={cardData[0]}>
+                <div className="input-card">
+                  <Input placeholder="Test" inputContext="card">
+                    <BiSearch />
+                  </Input>
+                </div>
+              </Card>
+            </motion.div>
+
+            <motion.div variants={item}>
+              <Card as={motion.div} variants={item} cardData={cardData[0]}>
+                <div className="input-card">
                   <Button typeButton="textButton">Ip Lookup</Button>
-              </div>
-            </Card>
-          </div>
+                </div>
+              </Card>
+            </motion.div>
+          </motion.div>
         </section>
       </main>
     </div>

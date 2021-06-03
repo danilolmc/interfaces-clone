@@ -6,7 +6,8 @@ $input-gray: var(--very-light-gray);
 .card {
   border-radius: 5px;
   background: $card-background;
-  padding: 3rem 2rem 0;
+  padding: 3rem 2rem 2.5rem;
+  height: auto;
 
   figure {
     display: flex;

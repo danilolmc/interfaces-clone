@@ -1,0 +1,80 @@
+$primary: var(--primary);
+$very-light-blue: var(--very-light-blue);
+
+ul {
+  padding: 0;
+  margin-top: 2rem;
+
+  svg {
+    width: 1.5rem;
+    transform: scale(1.4);
+    opacity: 0.3;
+  }
+
+  .menu-item {
+    height: 4rem;
+    cursor: pointer;
+    
+    label {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        column-gap: 1.5rem;
+        cursor: inherit;
+        padding-left: 3rem;
+        border-left: 4px solid transparent;
+        transition: 0.5s ease;
+
+        span {
+            display: flex;
+          align-items: center;
+          color: $primary;
+          font-weight: 500;
+          filter: brightness(40%);
+          font-size: 0.9rem;
+        }
+    
+    }
+
+    .subMenu {
+      width: 100%;
+
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 1rem;
+      }
+
+      & > span {
+        padding-left: 5.8rem;
+        height: 3.5rem;
+        display: flex;
+        align-items: center;
+        border-left: 4px solid transparent;
+        transition: .5s ease;
+
+        span {
+          color: $primary;
+          opacity: 0.8;
+          font-size: .9rem;
+          font-weight: 500;
+          filter: grayscale(80%);
+        }
+      }
+    }
+  }
+
+  .menu-item label,
+  .subMenu > span{
+    &:hover {
+      border-color: $primary;
+      background: $very-light-blue;
+    }
+  }
+}
+
+.--focused {
+
+  border-color: $primary !important;
+  background: $very-light-blue;
+}
